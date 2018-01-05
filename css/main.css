@@ -1,3 +1,89 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+/****** Navbar ******/
+nav {
+  background-color: transparent;
+}
+
+nav .navbar-nav a.nav-link {
+  color: #777;
+}
+
+nav .navbar-nav a.nav-link:hover {
+  color: #528bff;
+}
+
+nav .navbar-nav .active a.nav-link {
+  color: #444444;
+}
+
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/****** Header ******/
+header {
+  height: 80vh;
+  color: #fff;
+  padding: 200px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+header .blankDiv {
+  height: 200px;
+}
+
+header .header-title {
+  float: right;
+  margin: 5% auto;
+  width: 100%;
+}
+
+header .header-title h1{
+  font-size: 4.5rem;
+}
+
+
+
+
+
+.fdb-block h3, .fdb-block .text-h3 {
+  font-size: 1.125rem;
+  margin-bottom: .5em;
+  margin-top: .3em;
+  font-weight: 400;
+}
+
+.fdb-block {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  padding: 100px 0;
+  color: #444444;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.bg-dark {
+  background-color: #2d313c;
+  color: #f2f2f2;
+}
+
+.fdb-block .fdb-viewport {
+  min-height: calc(100% - 2 * 100px);
+}
+
+
+
+
 .btn {
   padding: 9px 26px;
   background-color: #528bff;
@@ -49,25 +135,9 @@
   min-width: 150px;
 }
 
-.fdb-block {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  padding: 100px 0;
-  color: #444444;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
 
-.fdb-block .fdb-viewport {
-  min-height: calc(100% - 2 * 100px);
-}
+
+
 
 .fdb-block .fdb-box {
   background: #FFFFFF;
@@ -88,13 +158,6 @@
 
 .fdb-block h1, .fdb-block .text-h1 {
   font-size: 2.75rem;
-  margin-bottom: .5em;
-  margin-top: .3em;
-  font-weight: 400;
-}
-
-.fdb-block h3, .fdb-block .text-h3 {
-  font-size: 1.125rem;
   margin-bottom: .5em;
   margin-top: .3em;
   font-weight: 400;
@@ -156,33 +219,9 @@
   z-index: 2;
 }
 
-header {
-  background-color: #FFFFFF;
-}
 
-header .navbar-nav a.nav-link {
-  color: #777;
-}
 
-header .navbar-nav a.nav-link:hover {
-  color: #528bff;
-}
 
-header .navbar-nav .active a.nav-link {
-  color: #444444;
-}
-
-header .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-header + header {
-  border-top: solid 1px #EEE;
-}
-
-.bg-dark {
-  background-color: #2d313c;
-  color: #f2f2f2; }
 
 .bg-gray {
   background-color: #fafafa;
@@ -222,8 +261,4 @@ footer a:link {
 
 footer a:hover {
     color: #fff;
-}
-
-.header1 {
-  height: 80vh;
 }
