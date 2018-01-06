@@ -47,8 +47,14 @@ header .header-title h1{
   font-size: 4.5rem;
 }
 
-
-
+/****** Citation ******/
+.citation {
+  width: 100%;
+  padding: 100px 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
 
 
 .fdb-block h3, .fdb-block .text-h3 {
