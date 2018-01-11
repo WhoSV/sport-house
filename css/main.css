@@ -79,13 +79,48 @@ header .header-title h1{
 .pricing {
   min-height: 500px;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 100px 0;
   color: #fff !important;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg_pricing.jpg");
+}
+
+.pricing h1 {
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 992px) {
+  .pricing .middle-price {
+    height: 400px;
+  }
+}
+
+.pricing .text-h4 {
+  font-size: 1rem;
+  margin-bottom: .5em;
+  margin-top: .3em;
+  font-weight: 400;
+}
+
+.pricing .bg-red {
+  background: linear-gradient(#e56464, #e54747);
+}
+
+.pricing .bg-gra {
+  background: linear-gradient(#525252, #3e3e3e);
+}
+
+.pricing .font-weight-light {
+  font-weight: 300;
+}
+
+.pricing img {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
 }
 
 /****** Footer Section ******/
