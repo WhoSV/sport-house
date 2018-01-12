@@ -1,7 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  text-align: center;
+  font-size: 100%;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.hashtag {
+  color: #e54747;
 }
 
 /****** Navbar Section ******/
@@ -27,6 +33,7 @@ nav .navbar-toggler-icon {
 
 /****** Header Section ******/
 header {
+  text-align: center;
   height: 80vh;
   color: #fff;
   padding: 200px 0;
@@ -50,6 +57,7 @@ header .header-title h1{
 
 /****** About Section ******/
 .about {
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
@@ -57,12 +65,56 @@ header .header-title h1{
   font-size: 1.125rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .about {
+    padding: 30px 0;
+  }
+
+  .about h1{
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+}
+
 /****** Coach Section ******/
-.coach {
+.fdb-block .col-fill-left {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.fdb-block .col-fill-left + div {
+  position: relative;
+  z-index: 2;
+}
+
+.fdb-block .col-fill-right {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.fdb-block .col-fill-right + div {
+  position: relative;
+  z-index: 2;
 }
 
 /****** Citation Section ******/
 .citation {
+  text-align: center;
   width: 100%;
   padding: 100px 0;
   color: #fff;
@@ -71,12 +123,31 @@ header .header-title h1{
   background-position: center;
 }
 
+.citation h1{
+  font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .citation {
+    padding: 50px 0;
+  }
+
+  .citation h1{
+    font-size: 1.5rem;
+  }
+
+  .citation p {
+    font-size: 15px;
+  }
+}
+
 /****** News Section ******/
 
 /****** Class Schadule Section ******/
 
 /****** Pricing Section ******/
 .pricing {
+  text-align: center;
   min-height: 500px;
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
@@ -92,10 +163,10 @@ header .header-title h1{
   font-weight: 400;
 }
 
-@media only screen and (min-width: 992px) {
-  .pricing .middle-price {
-    height: 400px;
-  }
+.pricing .bg-gray {
+  padding: 3rem;
+  background-color: #fafafa;
+  color: #444444;
 }
 
 .pricing .text-h4 {
@@ -123,19 +194,141 @@ header .header-title h1{
   -webkit-border-radius: 4px;
 }
 
+@media only screen and (min-width: 992px) {
+  .pricing .middle-price {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pricing .bg-gray {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+ .pricing {
+   padding: 50px 0;
+ }
+
+ .pricing h2 {
+   font-size: 1.5rem;
+ }
+
+ .pricing p {
+   font-size: 0.8rem;
+   margin-bottom: 0rem;
+ }
+}
+
+@media only screen and (max-width: 575px) {
+ .pricing .text-center {
+   padding: 0 10% 20px;
+ }
+
+ .pricing p {
+   font-size: 1rem;
+   margin-bottom: .5rem;
+ }
+}
+
+/****** Gallery Section ******/
+
 /****** Footer Section ******/
 footer {
   color: #fff;
   background-color: #232a35;
+  -webkit-font-smoothing: antialiased;
+  padding: 100px 0 50px;
 }
 
-footer .container {
-  margin: 0% 10%;
-  display: flex;
+footer h3 {
+  font-weight: 700;
 }
 
-footer .copyright {
-  background-color: #232a35;
+footer .contacts {
+  color: #d3d7e3;
+}
+
+footer .contacts p {
+  margin: 0;
+  padding: 0;
+}
+
+footer .contacts a {
+  margin-right: 30px;
+}
+
+footer .contacts a:link {
+  text-decoration: none;
+  color: #d3d7e3;
+}
+
+footer .contacts a:hover {
+  color: #e54747;
+}
+
+footer .contacts a span:hover {
+  color: #d3d7e3;
+}
+
+footer .iconSocial{
+  font-size: 40px;
+  margin: 20px 0px 5px;
+  color: #e54747;
+}
+
+footer .oppen-hours {
+  max-width: 250px;
+}
+
+footer .oppen-hours ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none outside none;
+  color: #d3d7e3;
+}
+
+footer .oppen-hours li {
+  padding-top: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+
+footer .right {
+  float: right;
+  font-size: .84375rem;
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 50px 0;
+  }
+
+  footer .contacts {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  footer .oppen-hours {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  footer .cont {
+    text-align: center;
+  }
+
+  footer .contacts a {
+    margin: auto 20px;
+  }
+}
+
+/****** Copyright Section ******/
+.copyright {
+  background-color: #202630;
   padding: 10px;
   color: #d3d7e3;
   text-align: center;
@@ -143,13 +336,22 @@ footer .copyright {
   font-size: 11px;
 }
 
-footer a:link {
-  text-decoration: none;
-  color: #f48460;
+.copyright p {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-footer a:hover {
-    color: #fff;
+.copyright p a{
+  -webkit-font-smoothing: auto;
+}
+
+.copyright a:link {
+  text-decoration: none;
+  color: #e54747;
+}
+
+.copyright a:hover {
+    color: #d3d7e3;
 }
 
 /* *********** */
@@ -186,59 +388,4 @@ footer a:hover {
   margin-bottom: .5em;
   margin-top: .3em;
   font-weight: 400;
-}
-
-.fdb-block .font-weight-light {
-  font-weight: 300;
-}
-
-.fdb-block img {
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-}
-
-.fdb-block img + p, .fdb-block img + h3, .fdb-block img + h4 {
-  margin-top: 20px;
-}
-
-.fdb-block img + h1, .fdb-block img + h2 {
-  margin-top: 40px;
-}
-
-.fdb-block .col-fill-left {
-  width: 50%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
-
-.fdb-block .col-fill-left + div {
-  position: relative;
-  z-index: 2;
-}
-
-.fdb-block .col-fill-right {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
-
-.fdb-block .col-fill-right + div {
-  position: relative;
-  z-index: 2;
-}
-
-.bg-gray {
-  background-color: #fafafa;
-  color: #444444;
 }
