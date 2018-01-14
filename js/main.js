@@ -22,12 +22,20 @@ $(function () {
   }
 
   window.onscroll = function() {
-    scrollFunction();
-    onScrollHandle();
+    onScrollChangeNavbarBgColor();
+    onScrollHandleActiveButton();
+    hideNavbarOnScroll();
   };
 
-  // OnScroll Change navBar background color
-  function scrollFunction() {
+  function hideNavbarOnScroll() {
+    var op = $(document.getElementById("navbarNav"));
+
+    if (op.hasClass("show")) {
+      $('.navbar-toggler').click();
+    }
+  }
+
+  function onScrollChangeNavbarBgColor() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       document.getElementById("navbar").style.background = "#232a35";
       document.getElementById("navbar").style.padding = "10px 5%";
@@ -37,8 +45,7 @@ $(function () {
     }
   }
 
-  // on scroll handle active button
-  function onScrollHandle() {
+  function onScrollHandleActiveButton() {
     //Get current scroll position
     var currentScrollPos = $(document).scrollTop();
     //Iterate through all node
@@ -47,7 +54,8 @@ $(function () {
       var refElem = $(curLink.attr('href'));
       //Compare the value of current position and the every section position in each scroll
       if (refElem.length) {
-        if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+        let position = refElem.position().top - 10
+        if ( position <= currentScrollPos && position + refElem.height() > currentScrollPos) {
           //Remove class active in all nav
           $('#navbarNav > ul > li').removeClass("active");
           //Add class active
@@ -58,6 +66,18 @@ $(function () {
         }
       }
     });
+  }
+
+  $(window).click(function(e) {
+    hideNavbarOnClick();
+  });
+
+  function hideNavbarOnClick() {
+    var op = $(document.getElementById("navbarNav"));
+
+    if (op.hasClass("show")) {
+      $('.navbar-toggler').click();
+    }
   }
 
   // Smooth Scroll functionality
@@ -82,14 +102,15 @@ $(function () {
   }
 
   // Toggle close navbar onClick
-  toggleColseNav()
+  toggleColseNavBar()
 
-  function toggleColseNav(){
+  function toggleColseNavBar(){
     $('.navbar-nav a').on('click', function(){
       if($(window).width() < 767) {
         $('.navbar-toggler').click();
       }
-  });}
+    });
+  }
 
   // Set Background-color onClick before scroll
   setBackgroundColorOnClick()
