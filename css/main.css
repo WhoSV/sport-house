@@ -4,55 +4,124 @@ body {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .hashtag {
   color: #e54747;
+  text-shadow: 1px 1px 1px #000000;
 }
 
 /****** Navbar Section ******/
 nav {
-  background-color: transparent;
+  padding: 50px 5%;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background: linear-gradient(180deg, #000 0, transparent);
 }
 
 nav .navbar-nav a.nav-link {
-  color: #777;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 1px #000000;
 }
 
-nav .navbar-nav a.nav-link:hover {
-  color: #528bff;
+nav .flag {
+  vertical-align: top;
 }
 
 nav .navbar-nav .active a.nav-link {
-  color: #444444;
+  color: #e54747;
 }
 
 nav .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media only screen and (min-width: 1000px) {
+  nav .nav-item {
+    margin: auto 10px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  nav .navbar-nav a.nav-link {
+    font-size: 15px;
+  }
 }
 
 /****** Header Section ******/
 header {
   text-align: center;
-  height: 80vh;
+  max-height: 100vh;
   color: #fff;
-  padding: 200px 0;
-  background-size: cover;
-  background-position: center;
+  margin: auto;
+  text-transform: uppercase;
 }
 
-header .blankDiv {
-  height: 200px;
-}
-
-header .header-title {
-  float: right;
-  margin: 5% auto;
+header img {
   width: 100%;
+  height: 100vh;
+  background-position: center;
+  object-fit:cover;
 }
 
-header .header-title h1{
-  font-size: 4.5rem;
+header h1 {
+  font-size: 90px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+header h3 {
+  text-shadow: 1px 1px 1px #000000;
+}
+
+header .mySlides {
+  display:none;
+}
+
+header .header-text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 80%;
+  font-weight: 400;
+  transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 1270px) {
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  header h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header .header-text {
+    width: 60%;
+  }
 }
 
 /****** About Section ******/
@@ -66,10 +135,6 @@ header .header-title h1{
 }
 
 @media only screen and (max-width: 767px) {
-  .about {
-    padding: 30px 0;
-  }
-
   .about h1{
     font-size: 1.5rem;
   }
@@ -169,7 +234,7 @@ header .header-title h1{
   color: #444444;
 }
 
-.pricing .text-h4 {
+.pricing .text-bold {
   font-size: 1rem;
   margin-bottom: .5em;
   margin-top: .3em;
@@ -233,6 +298,17 @@ header .header-title h1{
 }
 
 /****** Gallery Section ******/
+.gallery {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  padding: 100px 0;
+  color: #232a35;
+}
+
+.gallery h1 {
+  font-size: 2.75rem;
+  font-weight: 400;
+}
 
 /****** Footer Section ******/
 footer {
@@ -242,7 +318,8 @@ footer {
   padding: 100px 0 50px;
 }
 
-footer h3 {
+footer h4 {
+  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -383,7 +460,7 @@ footer .right {
   font-weight: 400;
 }
 
-.fdb-block h4, .fdb-block .text-h4 {
+.fdb-block h4 {
   font-size: 1rem;
   margin-bottom: .5em;
   margin-top: .3em;
