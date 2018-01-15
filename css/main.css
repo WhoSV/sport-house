@@ -22,6 +22,10 @@ nav {
   background: linear-gradient(180deg, #000 0, transparent);
 }
 
+nav .logo {
+  height: 30px;
+}
+
 nav .navbar-nav a.nav-link {
   color: #fff;
   font-weight: 500;
@@ -145,6 +149,20 @@ header .header-text {
 }
 
 /****** Coach Section ******/
+.coach {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  padding: 100px 0;
+  color: #444444;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
 .fdb-block .col-fill-left {
   width: 50%;
   position: absolute;
@@ -177,6 +195,34 @@ header .header-text {
   z-index: 2;
 }
 
+.fdb-block h3, .fdb-block .text-h3 {
+  font-size: 1.125rem;
+  margin-bottom: .5em;
+  margin-top: .3em;
+  font-weight: 400;
+}
+
+.fdb-block {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  padding: 100px 0;
+  color: #444444;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.fdb-block h1 {
+  font-size: 2.75rem;
+  margin-bottom: .5em;
+  margin-top: .3em;
+  font-weight: 400;
+}
+
 /****** Citation Section ******/
 .citation {
   text-align: center;
@@ -207,8 +253,34 @@ header .header-text {
 }
 
 /****** News Section ******/
+.news {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  padding: 100px 0;
+  color: #444444;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
 
 /****** Class Schadule Section ******/
+.schedule {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  padding: 100px 0;
+  color: #444444;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
 
 /****** Pricing Section ******/
 .pricing {
@@ -429,40 +501,4 @@ footer .right {
 
 .copyright a:hover {
     color: #d3d7e3;
-}
-
-/* *********** */
-.fdb-block h3, .fdb-block .text-h3 {
-  font-size: 1.125rem;
-  margin-bottom: .5em;
-  margin-top: .3em;
-  font-weight: 400;
-}
-
-.fdb-block {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  padding: 100px 0;
-  color: #444444;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
-
-.fdb-block h1 {
-  font-size: 2.75rem;
-  margin-bottom: .5em;
-  margin-top: .3em;
-  font-weight: 400;
-}
-
-.fdb-block h4 {
-  font-size: 1rem;
-  margin-bottom: .5em;
-  margin-top: .3em;
-  font-weight: 400;
 }
