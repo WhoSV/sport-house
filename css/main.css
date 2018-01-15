@@ -23,7 +23,7 @@ nav {
 }
 
 nav .logo {
-  height: 30px;
+  height: 40px;
 }
 
 nav .navbar-nav a.nav-link {
@@ -47,15 +47,25 @@ nav .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1105px) {
   nav .nav-item {
     margin: auto 10px;
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1105px) {
   nav .navbar-nav a.nav-link {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 880px) and (min-width: 768px){
+  nav .navbar-nav a.nav-link {
+    font-size: 12px;
+  }
+
+  nav .navbar {
+    padding: 0;
   }
 }
 
