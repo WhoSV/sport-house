@@ -36,12 +36,12 @@ $(function () {
   }
 
   function onScrollChangeNavbarBgColor() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       document.getElementById("navbar").style.background = "#232a35";
-      document.getElementById("navbar").style.padding = "10px 5%";
+      document.getElementById("navbar").style.padding = "5px 5%";
     } else {
       document.getElementById("navbar").style.background = "";
-      document.getElementById("navbar").style.padding = "50px 5%";
+      document.getElementById("navbar").style.padding = "40px 5%";
     }
   }
 

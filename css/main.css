@@ -15,7 +15,7 @@ body {
 
 /****** Navbar Section ******/
 nav {
-  padding: 50px 5%;
+  padding: 40px 5%;
   position: fixed;
   z-index: 9999;
   width: 100%;
@@ -56,6 +56,12 @@ nav .navbar-toggler-icon {
 @media only screen and (max-width: 1080px) {
   nav .navbar-nav a.nav-link {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav .navbar {
+    padding: 0;
   }
 }
 
@@ -150,77 +156,38 @@ header .header-text {
 
 /****** Coach Section ******/
 .coach {
-  font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  padding: 100px 0;
-  color: #444444;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  background-color: #FFFFFF;
-}
-
-.fdb-block .col-fill-left {
-  width: 50%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
-
-.fdb-block .col-fill-left + div {
-  position: relative;
-  z-index: 2;
-}
-
-.fdb-block .col-fill-right {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-}
-
-.fdb-block .col-fill-right + div {
-  position: relative;
-  z-index: 2;
-}
-
-.fdb-block h3, .fdb-block .text-h3 {
+  text-align: center;
   font-size: 1.125rem;
-  margin-bottom: .5em;
-  margin-top: .3em;
-  font-weight: 400;
 }
 
-.fdb-block {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  padding: 100px 0;
-  color: #444444;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  background-color: #FFFFFF;
+.coach .row {
+  width: 100%;
+  margin: 0;
 }
 
-.fdb-block h1 {
-  font-size: 2.75rem;
-  margin-bottom: .5em;
-  margin-top: .3em;
-  font-weight: 400;
+.coach h1 {
+  padding-top: 75px;
+}
+
+.coach .coachImg {
+  width: 100%;
+}
+
+.coach .coachInfo {
+  padding: 1.5rem 5rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .coach h1 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .coach .coachInfo {
+    font-size: 15px;
+    padding: 1.5rem 2rem;
+  }
 }
 
 /****** Citation Section ******/
@@ -458,6 +425,10 @@ footer .right {
   footer .contacts {
     padding-bottom: 50px;
   }
+
+  footer .maps {
+    height: 250px !important;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -496,9 +467,9 @@ footer .right {
 
 .copyright a:link {
   text-decoration: none;
-  color: #e54747;
+  color: #d3d7e3;
 }
 
 .copyright a:hover {
-    color: #d3d7e3;
+    color: #e54747;
 }

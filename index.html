@@ -143,30 +143,30 @@
     </section>
 
     <!-- Coach section -->
-    <section class="coach fdb-block " id="coach">
-      <div class="col-fill-left" style="background-image: url(img/bg_c_1.svg)"></div>
-      <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-12 col-md-5">
-            <h1>Coach 1 <span class="hashtag">/</span></h1>
-            <p class="text-h3">When she reached the first hills of the Italic Mountains, she had a last view back on the
-              skyline of her hometown Bookmarksgrove</p>
-            <p class="mt-4"><a href="https://www.froala.com">Learn More &gt;</a></p>
+    <section class="coach" id="coach">
+      <div class="row">
+        <div class="col-12 col-md-6 p-0">
+          <img class="coachImg" src="img/coach1.jpg">
+        </div>
+
+        <div class="col-12 col-md-6 p-0">
+          <h1>Сюмбели Виктор <span class="hashtag">/</span></h1>
+          <div class="coachInfo text-justify">
+            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.</p>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="fdb-block pt-0 pb-0">
-      <div class="col-fill-right" style="background-image: url(img/bg_c_1.svg)"></div>
-      <div class="container pt-5 pb-5">
-        <div class="row">
-          <div class="col-12 col-md-5">
-            <h1>Coach 2 <span class="hashtag">/</span></h1>
-            <p class="text-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-              live the blind texts.</p>
-            <p class="mt-4"><a href="https://www.froala.com">Learn More &gt;</a></p>
+      <div class="row">
+        <div class="col-12 col-md-6 p-0">
+          <h1>Китаев Артём <span class="hashtag">/</span></h1>
+          <div class="coachInfo text-justify">
+            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.</p>
           </div>
+        </div>
+
+        <div class="col-12 col-md-6 p-0">
+          <img class="coachImg" src="img/coach2.jpg">
         </div>
       </div>
     </section>
@@ -368,8 +368,7 @@
           </div>
 
           <div class="col-12 col-sm-12 col-md-4">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <!-- <div class="maps" id="googleMap" style="width:100%;height:400px;"></div> -->
+            <div class="maps" id="googleMap" style="width:100%;height:300px;"></div>
           </div>
 
         </div>
@@ -383,18 +382,48 @@
     </div>
 
     <!-- Scripts -->
-    <!-- <script>
+    <script>
       function myMap() {
         var myCenter = new google.maps.LatLng(47.042466, 28.760946);
         var mapCanvas = document.getElementById("googleMap");
-        var mapOptions = {center: myCenter, zoom: 15};
+        var mapOptions = {center: myCenter, zoom: 16, streetViewControl: false,
+          styles:[
+            {
+              "elementType": "geometry",
+              "stylers": [{"color": "#1d2c4d"}]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [{"color": "#8ec3b9"}]
+            },
+            {
+              "elementType": "labels.text.stroke",
+              "stylers": [{"color": "#1a3646"}]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry",
+              "stylers": [{"color": "#304a7d"}]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.fill",
+              "stylers": [{"color": "#98a5be"}]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.stroke",
+              "stylers": [{"color": "#1d2c4d"}]
+            }
+          ]
+        };
         var map = new google.maps.Map(mapCanvas, mapOptions);
         var marker = new google.maps.Marker({position:myCenter});
         marker.setMap(map);
       }
-    </script> -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp5-_DaBgWKUbg34oVgi4QSIKXJ5YC_aI&callback=myMap"></script> -->
+    </script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp5-_DaBgWKUbg34oVgi4QSIKXJ5YC_aI&callback=myMap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
