@@ -37,7 +37,7 @@ $(function () {
 
   function onScrollChangeNavbarBgColor() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      document.getElementById("navbar").style.background = "#232a35";
+      document.getElementById("navbar").style.background = "#ffffff";
       document.getElementById("navbar").style.padding = "5px 5%";
     } else {
       document.getElementById("navbar").style.background = "";
@@ -117,7 +117,7 @@ $(function () {
 
   function setBackgroundColorOnClick(){
     $('.navbar-toggler').on('click', function(){
-      document.getElementById("navbar").style.background = "#232a35";
+      document.getElementById("navbar").style.background = "#fff";
     });
   }
 });

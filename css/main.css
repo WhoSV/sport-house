@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 100%;
   font-weight: 300;
   letter-spacing: 0;
@@ -9,8 +9,21 @@ body {
 }
 
 .hashtag {
-  color: #e54747;
+  color: #0cf;
+  font-size: 120%;
+  font-weight: 700;
+}
+
+.sp {
+  color: #0cf;
   text-shadow: 1px 1px 1px #000000;
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 835px) {
+  .sp {
+    font-size: 50px;
+  }
 }
 
 /****** Navbar Section ******/
@@ -27,12 +40,11 @@ nav .logo {
 }
 
 nav .navbar-nav a.nav-link {
-  color: #fff;
+  color: #A3A3A3;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 0.5px;
-  text-shadow: 1px 1px 1px #000000;
 }
 
 nav .flag {
@@ -40,14 +52,15 @@ nav .flag {
 }
 
 nav .navbar-nav .active a.nav-link {
-  color: #e54747;
+  color: #0cf;
 }
 
 nav .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  color: #0cf;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 204, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-@media only screen and (min-width: 1105px) {
+@media only screen and (min-width: 1160px) {
   nav .nav-item {
     margin: auto 10px;
   }
@@ -55,7 +68,11 @@ nav .navbar-toggler-icon {
 
 @media only screen and (max-width: 1105px) {
   nav .navbar-nav a.nav-link {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  nav .navbar {
+    padding: 0 !important;
   }
 }
 
@@ -64,14 +81,18 @@ nav .navbar-toggler-icon {
     font-size: 12px;
   }
 
-  nav .navbar {
-    padding: 0;
+  nav .logo {
+    height: 37px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   nav .navbar {
     padding: 0;
+  }
+
+  nav .navbar-nav {
+    margin-top: 20px;
   }
 }
 
@@ -92,13 +113,8 @@ header img {
 }
 
 header h1 {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #000000;
-}
-
-header h3 {
-  text-shadow: 1px 1px 1px #000000;
 }
 
 header .mySlides {
@@ -107,24 +123,21 @@ header .mySlides {
 
 header .header-text {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   width: 80%;
   font-weight: 400;
   transform: translate(-50%,-50%);
 }
 
-@media only screen and (max-width: 1270px) {
-  header h1 {
-    font-size: 60px;
-  }
-
-  header h3 {
-    font-size: 20px;
-  }
-}
-
 @media only screen and (max-width: 835px) {
+  header .header-text {
+    top: 70%;
+    width: 100%;
+    padding: 7%;
+    text-align: left;
+  }
+
   header h1 {
     font-size: 40px;
   }
@@ -134,18 +147,9 @@ header .header-text {
   }
 }
 
-@media only screen and (max-width: 560px) {
-  header h1 {
-    font-size: 30px;
-  }
-
-  header .header-text {
-    width: 60%;
-  }
-}
-
 /****** About Section ******/
 .about {
+  background-color: #F2F2F2;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -241,7 +245,7 @@ header .header-text {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 /****** Class Schadule Section ******/
@@ -256,7 +260,7 @@ header .header-text {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 /****** Pricing Section ******/
@@ -291,7 +295,7 @@ header .header-text {
 }
 
 .pricing .bg-red {
-  background: linear-gradient(#e56464, #e54747);
+  background: linear-gradient(#00a3cc, #0cf);
 }
 
 .pricing .bg-gra {
@@ -352,6 +356,7 @@ header .header-text {
   -webkit-font-smoothing: antialiased;
   padding: 100px 0;
   color: #232a35;
+  background-color: #F2F2F2;
 }
 
 .gallery h1 {
@@ -391,7 +396,7 @@ footer .contacts a:link {
 }
 
 footer .contacts a:hover {
-  color: #e54747;
+  color: #0cf;
 }
 
 footer .contacts a span:hover {
@@ -401,7 +406,7 @@ footer .contacts a span:hover {
 footer .iconSocial{
   font-size: 40px;
   margin: 20px 0px 5px;
-  color: #e54747;
+  color: #0cf;
 }
 
 footer .oppen-hours {
@@ -477,9 +482,9 @@ footer .right {
 
 .copyright a:link {
   text-decoration: none;
-  color: #d3d7e3;
+  color: #0cf;
 }
 
 .copyright a:hover {
-    color: #e54747;
+    color:  #d3d7e3;
 }
