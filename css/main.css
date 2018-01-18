@@ -382,7 +382,7 @@ header .header-text {
 
 .gallery .img-container {
   max-height: 350px;
-  padding: 0.5%;
+  padding: 5px;
 }
 
 .gallery .img-container:hover {
