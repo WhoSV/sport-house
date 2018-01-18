@@ -10,7 +10,7 @@ body {
 
 .hashtag {
   color: #0cf;
-  font-size: 120%;
+  font-size: 110%;
   font-weight: 700;
 }
 
@@ -30,7 +30,7 @@ body {
 nav {
   padding: 40px 5%;
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
   width: 100%;
   background: linear-gradient(180deg, #000 0, transparent);
 }
@@ -149,6 +149,7 @@ header .header-text {
 
 /****** About Section ******/
 .about {
+  color: #444444;
   background-color: #F2F2F2;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -170,6 +171,7 @@ header .header-text {
 
 /****** Coach Section ******/
 .coach {
+  color: #444444;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   font-size: 1.125rem;
@@ -225,7 +227,7 @@ header .header-text {
   }
 
   .citation h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .citation p {
@@ -235,7 +237,6 @@ header .header-text {
 
 /****** News Section ******/
 .news {
-  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
@@ -246,6 +247,14 @@ header .header-text {
   background-position: center;
   overflow: hidden;
   background-color: #F2F2F2;
+}
+
+.news h1 {
+  text-align: center;
+}
+
+.newsContainer {
+  background-color: #000;
 }
 
 /****** Class Schadule Section ******/
@@ -299,7 +308,7 @@ header .header-text {
 }
 
 .pricing .bg-gra {
-  background: linear-gradient(#525252, #3e3e3e);
+  background: linear-gradient(#52627c, #232a35);
 }
 
 .pricing .font-weight-light {
@@ -355,13 +364,132 @@ header .header-text {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   padding: 100px 0;
-  color: #232a35;
   background-color: #F2F2F2;
 }
 
 .gallery h1 {
+  color: #232a35;
   font-size: 2.75rem;
   font-weight: 400;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit:cover;
+}
+
+.gallery .img-container {
+  max-height: 350px;
+  padding: 0.5%;
+}
+
+.gallery .img-container:hover {
+  opacity: 0.7;
+}
+
+.gallery .seeMore {
+  text-align: right;
+  padding-top: 25px;
+  font-size: 18px;
+  -webkit-font-smoothing: auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .gallery .seeMore {
+    padding: 25px;
+  }
+}
+
+.gallery a {
+  text-decoration: none;
+  color: #0cf;
+}
+
+.gallery a:hover {
+  color: #232a35;
+}
+
+.gallery .modal {
+  display: none;
+  z-index: 10;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: rgba(0,0,0,.8);
+}
+
+.gallery .close {
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.gallery .close:hover {
+  color: #0cf;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery .modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 850px) {
+  .gallery .modal-content {
+    margin-top: 10%;
+    width: 85%;
+  }
+}
+
+.gallery .myGallery {
+  display: none;
+}
+
+.gallery .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.gallery .prev,
+.gallery .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 32px 16px;
+  margin-top: -50px;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.gallery .prev:hover,
+.gallery .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gallery .active {
+  opacity: 1;
 }
 
 /****** Footer Section ******/
@@ -388,19 +516,12 @@ footer .contacts p {
 
 footer .contacts a {
   margin-right: 30px;
-}
-
-footer .contacts a:link {
   text-decoration: none;
   color: #d3d7e3;
 }
 
 footer .contacts a:hover {
   color: #0cf;
-}
-
-footer .contacts a span:hover {
-  color: #d3d7e3;
 }
 
 footer .iconSocial{
@@ -478,9 +599,6 @@ footer .right {
 
 .copyright p a{
   -webkit-font-smoothing: auto;
-}
-
-.copyright a:link {
   text-decoration: none;
   color: #0cf;
 }
