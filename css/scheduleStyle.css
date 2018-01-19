@@ -1,0 +1,84 @@
+.schedule {
+  font-family: Open Sans, sans-serif;
+  padding: 100px 20px;
+  font-size: 14px;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../img/bg_schedule.jpg");
+}
+
+.schedule h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.rt-routine {
+  overflow-x: auto;
+}
+
+.rt-routine table {
+  margin: 25px auto;
+  max-width: 1140px;
+}
+
+.rt-routine th, .rt-routine td {
+  border: 1px dotted rgba(255,255,255,.2);
+  padding: 1px;
+  text-align: center;
+}
+
+.rt-routine .rt-col-title>div {
+  background-color: #0cf;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px 5px;
+}
+
+.rt-routine td .rt-item {
+  margin-top: 0;
+  opacity: 1;
+  min-width: 110px;
+}
+
+.rt-routine .rt-row-title {
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 40px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .rt-routine .rt-row-title {
+    padding: 10px;
+  }
+}
+
+.rt-routine .rt-item {
+  margin-top: 1px;
+  background-color: #fff;
+  padding: 5px 3px;
+  font-weight: 400;
+  display: block;
+}
+
+.rt-routine .rt-item-title {
+  color: #0cf;
+  margin: 0px 3px 2px 3px;
+}
+
+
+.rt-routine .rt-item-time, .rt-routine .rt-item-trainer {
+  color: #222;
+  font-size: 13px;
+}
+
+.rt-routine::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+}
+
+.rt-routine::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid #0cf;
+  background-color: rgba(0,0,0,.3);
+}
