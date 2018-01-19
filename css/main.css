@@ -329,10 +329,12 @@ header .header-text {
 }
 
 .pricing .bg-red {
+  padding: 1rem;
   background: linear-gradient(#00a3cc, #0cf);
 }
 
 .pricing .bg-gra {
+  padding: 1rem;
   background: linear-gradient(#52627c, #232a35);
 }
 
@@ -356,16 +358,25 @@ header .header-text {
   font-size: 30px;
   font-weight: 800
 }
+@media only screen and (max-width: 1200px) {
+  .pricing .bg-gra {
+    padding: 1rem 0rem;
+  }
 
-@media only screen and (min-width: 992px) {
+  .pricing .bg-gray {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .pricing .middle-price {
     height: 400px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .pricing .bg-gray {
-    padding: 1rem;
+  .container {
+    max-width: 880px;
   }
 }
 
