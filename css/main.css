@@ -182,19 +182,34 @@ header .header-text {
   margin: 0;
 }
 
-.coach h1 {
-  padding-top: 75px;
-}
-
 .coach .coachImg {
   width: 100%;
 }
 
 .coach .coachInfo {
-  padding: 1.5rem 5rem;
+  text-align: left;
+  width: 80%;
+  margin: 10% auto 0;
+  max-width: 630px;
 }
 
-@media only screen and (max-width: 1050px) {
+.coach ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coach li::before {
+  content: "•";
+  color: #0cf;
+  margin-right: 1rem;
+}
+
+.coach h1 {
+  padding-top: 75px;
+}
+
+@media only screen and (max-width: 1300px) {
   .coach h1 {
     font-size: 25px;
     padding-top: 20px;
@@ -202,7 +217,32 @@ header .header-text {
 
   .coach .coachInfo {
     font-size: 15px;
-    padding: 1.5rem 2rem;
+    /* width: 90%; */
+    margin: 5% auto 0;
+  }
+
+  .coach li::before {
+    margin-right: 0.2rem;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 920px){
+  .coach .coachInfo {
+    font-size: 12px;
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .coach .coachInfo {
+    font-size: 15px;
+    width: 80%;
+    margin: 5% auto 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coach .coachInfo {
+    width: 90%;
   }
 }
 
@@ -306,6 +346,17 @@ header .header-text {
   -webkit-border-radius: 4px;
 }
 
+.pricing .action-price {
+  font-size: 16px;
+  margin: 20px 0 auto auto;
+}
+
+.pricing .action-price span {
+  color: red;
+  font-size: 30px;
+  font-weight: 800
+}
+
 @media only screen and (min-width: 992px) {
   .pricing .middle-price {
     height: 400px;
@@ -330,6 +381,11 @@ header .header-text {
  .pricing p {
    font-size: 0.8rem;
    margin-bottom: 0rem;
+ }
+
+ .pricing .action-price {
+   margin: 10px;
+   font-size: 14px;
  }
 }
 
