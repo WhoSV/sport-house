@@ -289,12 +289,69 @@ header .header-text {
   background-color: #F2F2F2;
 }
 
-.news h1 {
-  text-align: center;
+.news .carousel {
+  padding-top: 25px;
 }
 
-.newsContainer {
-  background-color: #000;
+@media (min-width: 768px) {
+  /* show 3 items */
+  .news .carousel-inner .active,
+  .news .carousel-inner .active + .carousel-item,
+  .news .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .news .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .news .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .news .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .news .carousel-inner .carousel-item-next, .news .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .news .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .news .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .news .carousel-item-next.carousel-item-left + .carousel-item,
+  .news .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .news .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .news .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .news .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .news .carousel-item-prev.carousel-item-right + .carousel-item,
+  .news .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .news .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
 }
 
 /****** Pricing Section ******/
@@ -358,6 +415,7 @@ header .header-text {
   font-size: 30px;
   font-weight: 800
 }
+
 @media only screen and (max-width: 1200px) {
   .pricing .bg-gra {
     padding: 1rem 0rem;
@@ -374,40 +432,13 @@ header .header-text {
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .container {
-    max-width: 880px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 767px) {
  .pricing {
    padding: 50px 0;
  }
 
- .pricing h2 {
-   font-size: 1.5rem;
- }
-
- .pricing p {
-   font-size: 0.8rem;
-   margin-bottom: 0rem;
- }
-
- .pricing .action-price {
-   margin: 10px;
-   font-size: 14px;
- }
-}
-
-@media only screen and (max-width: 575px) {
  .pricing .text-center {
-   padding: 0 10% 20px;
- }
-
- .pricing p {
-   font-size: 1rem;
-   margin-bottom: .5rem;
+   padding: 0 0 20px;
  }
 }
 

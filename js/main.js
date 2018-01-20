@@ -18,7 +18,7 @@ $(function () {
     }
     x[myIndex-1].style.display = "block";
 
-    setTimeout(carousel, 4000); // Change image every 2 seconds
+    setTimeout(carousel, 4000);
   }
 
   window.onscroll = function() {
@@ -119,5 +119,29 @@ $(function () {
     $('.navbar-toggler').on('click', function(){
       document.getElementById("navbar").style.background = "#fff";
     });
+  }
+});
+
+// News Carousel
+$("#myCarousel").on("slide.bs.carousel", function(e) {
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var itemsPerSlide = 3;
+  var totalItems = $(".carousel-item").length;
+
+  if (idx >= totalItems - (itemsPerSlide - 1)) {
+    var it = itemsPerSlide - (totalItems - idx);
+    for (var i = 0; i < it; i++) {
+      // append slides to end
+      if (e.direction == "left") {
+        $(".carousel-item")
+          .eq(i)
+          .appendTo(".carousel-inner");
+      } else {
+        $(".carousel-item")
+          .eq(0)
+          .appendTo(".carousel-inner");
+      }
+    }
   }
 });
