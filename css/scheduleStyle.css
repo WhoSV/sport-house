@@ -4,7 +4,7 @@
   font-size: 14px;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../img/bg_schedule.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/bg_schedule.jpg");
 }
 
 .schedule h1 {
