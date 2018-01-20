@@ -159,6 +159,19 @@ header .header-text {
   font-size: 1.125rem;
 }
 
+.about ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about li::before {
+  content: "•";
+  color: #0cf;
+  margin-right: 1rem;
+}
+
+
 @media only screen and (max-width: 767px) {
   .about h1{
     font-size: 1.5rem;
