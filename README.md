@@ -1,4 +1,5 @@
 # SportHouse for HTML5
+version: "1.4.0"
 
 ## Introduction
 
