@@ -1,8 +1,14 @@
+# SportHouse for HTML5
 
-# Sport-House
+## Introduction
 
-This project is a simple HTML5 front-end web application.
+*SportHouse* is a simple HTML5 front-end web app.
 
-## License
+It is a modern responsive front-end web application. All sections are independent and can be reused in another applications.
 
-The code is available under the [MIT license](LICENSE.txt).
+*SportHouse* was developed with:
+
+* HTML5
+* CSS3
+* jQuery
+* Bootstrap
