@@ -109,7 +109,7 @@ header img {
   width: 100%;
   height: 100vh;
   background-position: center;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 header h1 {
@@ -177,7 +177,7 @@ header .header-text {
     font-size: 1.5rem;
   }
 
-  .about p {
+  .about p, .about ul{
     font-size: 15px;
   }
 }
@@ -230,7 +230,6 @@ header .header-text {
 
   .coach .coachInfo {
     font-size: 15px;
-    /* width: 90%; */
     margin: 5% auto 0;
   }
 
@@ -306,7 +305,14 @@ header .header-text {
   padding-top: 25px;
 }
 
+.news .card img {
+  height: 250px;
+}
+
 @media (min-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
   /* show 3 items */
   .news .carousel-inner .active,
   .news .carousel-inner .active + .carousel-item,
