@@ -1,6 +1,7 @@
 # SportHouse for HTML5
 
-https://badge.fury.io/gh/WhoSV%2Fsport-house.svg
+[![GitHub version](https://badge.fury.io/gh/WhoSV%2Fsport-house.svg)](https://badge.fury.io/gh/WhoSV%2Fsport-house)
+
 <!-- v1.0.0 -->
 
 ## Introduction
