@@ -1,11 +1,13 @@
 # SportHouse for HTML5
-version: "1.0.0"
+
+https://badge.fury.io/gh/WhoSV%2Fsport-house.svg
+<!-- v1.0.0 -->
 
 ## Introduction
 
-*SportHouse* is a simple HTML5 front-end web app.
+*SportHouse* is a simple HTML5 static website.
 
-It is a modern responsive front-end web application. All sections are independent and can be reused in another applications.
+It is a modern, responsive, static website. All sections are independent and can be reused in another applications.
 
 *SportHouse* was developed with:
 
