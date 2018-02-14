@@ -309,10 +309,29 @@ header .header-text {
   height: 250px;
 }
 
-@media (min-width: 768px) {
-  .carousel-control-prev, .carousel-control-next {
-    display: none;
+.card-body {
+  min-height: 200px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 7%;
+  opacity: 1
+}
+
+@media (max-width: 767px) {
+  .carousel-inner {
+    width: 80%;
   }
+}
+
+@media (max-width: 1199px) {
+  .card-body {
+    min-height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+
   /* show 3 items */
   .news .carousel-inner .active,
   .news .carousel-inner .active + .carousel-item,
