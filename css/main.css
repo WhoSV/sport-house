@@ -310,7 +310,7 @@ header .header-text {
 }
 
 .card-body {
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -321,12 +321,6 @@ header .header-text {
 @media (max-width: 767px) {
   .carousel-inner {
     width: 80%;
-  }
-}
-
-@media (max-width: 1199px) {
-  .card-body {
-    min-height: 250px;
   }
 }
 
