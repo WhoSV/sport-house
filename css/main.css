@@ -301,6 +301,12 @@ header .header-text {
   background-color: #F2F2F2;
 }
 
+@media (max-width: 1000px) and (min-width: 767px) {
+  .news .container {
+    max-width: unset !important;
+  }
+}
+
 .news .carousel {
   padding-top: 25px;
 }
@@ -310,7 +316,7 @@ header .header-text {
 }
 
 .card-body {
-  min-height: 250px;
+  height: 250px;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -320,7 +326,7 @@ header .header-text {
 
 @media (max-width: 767px) {
   .carousel-inner {
-    width: 80%;
+    width: 90%;
   }
 }
 
