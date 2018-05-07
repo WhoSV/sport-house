@@ -7,11 +7,11 @@
 
 ## Introduction
 
-*SportHouse* is a simple HTML5 static website.
+_SportHouse_ is a simple HTML5 static website.
 
 It is a modern, responsive, static website. All sections are independent and can be reused in another applications.
 
-*SportHouse* was developed with:
+_SportHouse_ was developed with:
 
 * HTML5
 * CSS3
