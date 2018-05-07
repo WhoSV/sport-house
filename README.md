@@ -5,6 +5,8 @@
 
 <!-- v1.0.4 -->
 
+![alternativetext](screenshot.png)
+
 ## Introduction
 
 _SportHouse_ is a simple HTML5 static website.
