@@ -1,9 +1,9 @@
 # SportHouse for HTML5
 
-[![GitHub version](https://badge.fury.io/gh/WhoSV%2Fsport-house.svg)](https://badge.fury.io/gh/WhoSV%2Fsport-house)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/mit)
-
 <!-- v1.0.4 -->
+
+[![GitHub version](https://badge.fury.io/gh/WhoSV%2Fsport-house.svg)](https://badge.fury.io/gh/WhoSV%2Fsport-house)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](ttps://github.com/WhoSV/sport-house)
 
 ![alternativetext](screenshot.png)
 
@@ -15,7 +15,7 @@ It is a modern, responsive, static website. All sections are independent and can
 
 _SportHouse_ was developed with:
 
-* HTML5
-* CSS3
-* jQuery
-* Bootstrap
+- HTML5
+- CSS3
+- jQuery
+- Bootstrap
